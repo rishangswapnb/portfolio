@@ -9,6 +9,6 @@ test('renders home page logo', () => {
       <App />
     </MemoryRouter>
   );
-  const logoElement = screen.getByAltText(/custom logo/i);
+  const logoElement = screen.getByAltText(/rishang sharma logo/i);
   expect(logoElement).toBeInTheDocument();
 });

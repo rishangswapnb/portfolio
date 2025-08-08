@@ -5,9 +5,9 @@ import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin } from 'react-icons/fa';
 
 const userData = {
   name: 'Rishang',
-  title: 'Technical Program Manager',
-  summary: 'Driving complex programs and delivering value through agile methods.',
-  companyUniversity: 'EY',
+  title: 'Senior Software Engineer',
+  summary: 'Building robust full-stack applications and solving complex problems.',
+  companyUniversity: 'Ernst & Young',
   linkedinLink: 'https://www.linkedin.com/in/rishang',
   email: 'rishang@example.com',
   phoneNumber: '+1 555 123 4567'
