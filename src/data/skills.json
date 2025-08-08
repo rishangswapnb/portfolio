@@ -1,0 +1,5 @@
+[
+  {"name": "Program Management", "category": "Management", "description": "Agile and waterfall delivery", "icon": "FaTools"},
+  {"name": "Cloud Platforms", "category": "Technical", "description": "Azure and AWS services", "icon": "FaCloud"},
+  {"name": "Data Analysis", "category": "Technical", "description": "PowerBI, SQL", "icon": "FaDatabase"}
+]

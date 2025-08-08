@@ -1,29 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './ContactMe.css';
-import profilePic from '../images/sumanth.jpeg';
+import profilePic from '../assets/rishang.jpeg';
 import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin } from 'react-icons/fa';
-import { ContactMe as IContactMe } from '../types';
-import { getContactMe } from '../queries/getContactMe';
+
+const userData = {
+  name: 'Rishang',
+  title: 'Technical Program Manager',
+  summary: 'Driving complex programs and delivering value through agile methods.',
+  companyUniversity: 'EY',
+  linkedinLink: 'https://www.linkedin.com/in/rishang',
+  email: 'rishang@example.com',
+  phoneNumber: '+1 555 123 4567'
+};
 
 const ContactMe: React.FC = () => {
 
-  const [userData, setUserData] = useState<IContactMe>()
-
-  useEffect(() => {
-    async function fetchUserData() {
-      const data = await getContactMe();
-      setUserData(data);
-    }
-
-    fetchUserData();
-  }, []);
-
-  if (!userData) return <div>Loading...</div>;
 
   return (
     <div className="contact-container">
       <div className="linkedin-badge-custom">
-        <img src={profilePic} alt="Sumanth Samala" className="badge-avatar" />
+        <img src={profilePic} alt="Rishang" className="badge-avatar" />
         <div className="badge-content">
           <h3 className="badge-name">{userData?.name}</h3>
           <p className="badge-title">{userData.title}</p>

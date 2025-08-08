@@ -1,8 +1,8 @@
 import React from 'react';
 import './Music.css';
-import albumCover1 from '../images/Hotelcalifornia.jpg'; // Hotel California by The Eagles
-import albumCover2 from '../images/ac-dc.jpg'; // Back in Black by AC/DC
-import albumCover3 from '../images/guns-n-roses.webp'; // Appetite for Destruction by Guns N' Roses
+import albumCover1 from '../assets/Hotelcalifornia.jpg'; // Hotel California by The Eagles
+import albumCover2 from '../assets/ac-dc.jpg'; // Back in Black by AC/DC
+import albumCover3 from '../assets/guns-n-roses.webp'; // Appetite for Destruction by Guns N' Roses
 
 const favoriteGenres = ["Rock", "Classic Rock", "Hard Rock", "Blues", "Alternative"];
 const favoriteAlbums = [
