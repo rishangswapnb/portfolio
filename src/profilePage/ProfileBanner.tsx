@@ -5,7 +5,7 @@ import MoreInfoButton from '../components/MoreInfoButton';
 
 const bannerData = {
   headline: "Hi, I'm Rishang",
-  profileSummary: 'Technical Program Manager with a passion for delivering complex cloud projects.',
+  profileSummary: 'Senior Software Engineer focused on building scalable web applications.',
   resumeLink: { url: '#' },
   linkedinLink: 'https://www.linkedin.com/in/rishang'
 };
