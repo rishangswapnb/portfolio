@@ -1,19 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './WorkPermit.css';
-import { getWorkPermit } from '../queries/getWorkPermit';
-import { WorkPermit as IWorkPermit } from '../types';
+
+const workPermitData = {
+  visaStatus: 'Skilled Worker',
+  expiryDate: '2027-12-31',
+  summary: 'Authorized to work in the UK',
+  additionalInfo: 'Open to relocation and remote opportunities.'
+};
 const WorkPermit: React.FC = () => {
-
-  const [workPermitData, setWorkPermitData] = useState<IWorkPermit | null>(null);
-  useEffect(() => {
-    async function fetchWorkPermitData() {
-      const data = await getWorkPermit();
-      setWorkPermitData(data);
-    }
-    fetchWorkPermitData();
-  }, []);
-
-  if (!workPermitData) return <div>Loading...</div>;
 
   return (
     <div className="work-permit-container">

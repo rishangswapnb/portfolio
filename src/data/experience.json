@@ -1,0 +1,18 @@
+[
+  {
+    "timelineType": "work",
+    "name": "EY",
+    "title": "Senior Technical Program Manager",
+    "techStack": "Azure, ML Ops",
+    "summaryPoints": "Delivered AI platform for global clients",
+    "dateRange": "2021 - Present"
+  },
+  {
+    "timelineType": "work",
+    "name": "Startup XYZ",
+    "title": "Technical Program Manager",
+    "techStack": "AWS, DevOps",
+    "summaryPoints": "Built CI/CD and cost optimization tooling",
+    "dateRange": "2018 - 2021"
+  }
+]

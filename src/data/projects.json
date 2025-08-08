@@ -1,0 +1,20 @@
+[
+  {
+    "title": "AI Platform Delivery at EY",
+    "description": "Led deployment of a scalable AI/ML platform for enterprise clients.",
+    "techUsed": "Azure, Kubernetes, Terraform",
+    "image": "ai_platform.jpg"
+  },
+  {
+    "title": "Azure DevOps CI/CD",
+    "description": "Implemented automated pipelines to streamline cloud deployments.",
+    "techUsed": "Azure DevOps, Docker, Kubernetes",
+    "image": "azure_cicd.jpg"
+  },
+  {
+    "title": "Cost Optimization Dashboard",
+    "description": "Delivered a reporting tool to monitor and reduce cloud spend.",
+    "techUsed": "PowerBI, Python, Azure",
+    "image": "cost_dashboard.jpg"
+  }
+]
