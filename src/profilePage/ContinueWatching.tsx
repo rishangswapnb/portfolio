@@ -1,7 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ContinueWatching.css';
-import placeholder from '../assets/logo.png';
+// import placeholder from '../assets/logo.png';
+ import certificationsImg from '../assets/certifications_thumb.png';
+ import blogsImg from '../assets/blogs_thumb.png';
+ import contactImg from '../assets/contact_thumb.png';
+ import musicImg from '../assets/music_thumb.png';
+ import readingImg from '../assets/reading_thumb.png';
 
 type ProfileType = 'recruiter' | 'developer' | 'stalker' | 'adventure';
 
@@ -11,28 +16,28 @@ interface ContinueWatchingProps {
 
 const continueWatchingConfig = {
   recruiter: [
-    { title: "Music", imgSrc: placeholder, link: "/music" },
-    { title: "Reading", imgSrc: placeholder, link: "/reading" },
-    { title: "Blogs", imgSrc: placeholder, link: "/blogs" },
-    { title: "Contact Me", imgSrc: placeholder, link: "/contact-me" }
+    { title: "Music", imgSrc: musicImg, link: "/music" },
+    { title: "Reading", imgSrc: readingImg, link: "/reading" },
+    { title: "Blogs", imgSrc: blogsImg, link: "/blogs" },
+    { title: "Contact Me", imgSrc: contactImg, link: "/contact-me" }
   ],
   developer: [
-    { title: "Music", imgSrc: placeholder, link: "/music" },
-    { title: "Reading", imgSrc: placeholder, link: "/reading" },
-    { title: "Blogs", imgSrc: placeholder, link: "/blogs" },
-    { title: "Certifications", imgSrc: placeholder, link: "/certifications" },
-    { title: "Contact Me", imgSrc: placeholder, link: "/contact-me" }
+    { title: "Music", imgSrc: musicImg, link: "/music" },
+    { title: "Reading", imgSrc: readingImg, link: "/reading" },
+    { title: "Blogs", imgSrc: blogsImg, link: "/blogs" },
+    { title: "Certifications", imgSrc: certificationsImg, link: "/certifications" },
+    { title: "Contact Me", imgSrc: contactImg, link: "/contact-me" }
   ],
   stalker: [
-    { title: "Reading", imgSrc: placeholder, link: "/reading" },
-    { title: "Blogs", imgSrc: placeholder, link: "/blogs" },
-    { title: "Contact Me", imgSrc: placeholder, link: "/contact-me" }
+    { title: "Reading", imgSrc: readingImg, link: "/reading" },
+    { title: "Blogs", imgSrc: blogsImg, link: "/blogs" },
+    { title: "Contact Me", imgSrc: contactImg, link: "/contact-me" }
   ],
   adventure: [
-    { title: "Music", imgSrc: placeholder, link: "/music" },
-    { title: "Reading", imgSrc: placeholder, link: "/reading" },
-    { title: "Certifications", imgSrc: placeholder, link: "/certifications" },
-    { title: "Contact Me", imgSrc: placeholder, link: "/contact-me" }
+    { title: "Music", imgSrc: musicImg, link: "/music" },
+    { title: "Reading", imgSrc: readingImg, link: "/reading" },
+    { title: "Certifications", imgSrc: certificationsImg, link: "/certifications" },
+    { title: "Contact Me", imgSrc: contactImg, link: "/contact-me" }
   ]
 };
 

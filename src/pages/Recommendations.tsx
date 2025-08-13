@@ -1,6 +1,7 @@
 import React from 'react';
 import './Recommendations.css';
-import chrisProfilePic from '../assets/chris.jpg'; // Adjust the path based on your directory structure
+// Replace `recommendation_avatar.png` with the recommender's photo stored in `src/assets`
+import chrisProfilePic from '../assets/recommendation_avatar.png';
 
 const Recommendations: React.FC = () => {
   return (
@@ -9,8 +10,8 @@ const Recommendations: React.FC = () => {
         <div className="recommendation-header">
           <img src={chrisProfilePic} alt="Chris Smith" className="profile-pic" />
           <div>
-            <h3>Chris Smith</h3>
-            <p>Head of Kajima Community</p>
+            <h3>Marie Ty</h3>
+            <p>Senior Manager EY</p>
             <p className="date">October 24, 2024</p>
           </div>
         </div>

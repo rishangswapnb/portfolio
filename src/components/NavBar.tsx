@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaHome, FaBriefcase, FaTools, FaProjectDiagram, FaEnvelope } from 'react-icons/fa'; // Import icons
 import './Navbar.css';
-import netflixLogo from '../assets/logo-2.png';
-import blueImage from '../assets/blue.png';
+// Main logo shown on the navbar; replace `main_logo.png` with your image placed in `src/assets`
+import netflixLogo from '../assets/main_logo.png';
+// Default profile icon used when no avatar is supplied
+import blueImage from '../assets/profile_icon.png';
 
 const Navbar: React.FC = () => {
   const location = useLocation();
@@ -34,7 +36,7 @@ const Navbar: React.FC = () => {
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="navbar-left">
           <Link to="/" className="navbar-logo">
-            <img src={netflixLogo} alt="Netflix" />
+            <img src={netflixLogo} alt="Main Logo" />
           </Link>
           <ul className="navbar-links">
             <li><Link to="/browse">Home</Link></li>
@@ -61,7 +63,7 @@ const Navbar: React.FC = () => {
       {/* Sidebar (only visible on mobile) */}
       <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <div className="sidebar-logo">
-          <img src={netflixLogo} alt="Netflix Logo" />
+          <img src={netflixLogo} alt="Main Logo" />
         </div>
         <ul>
           <li><Link to="/browse" onClick={closeSidebar}><FaHome /> Home</Link></li>

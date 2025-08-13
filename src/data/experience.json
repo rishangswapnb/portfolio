@@ -1,18 +1,41 @@
 [
   {
     "timelineType": "work",
-    "name": "EY",
-    "title": "Senior Technical Program Manager",
-    "techStack": "Azure, ML Ops",
-    "summaryPoints": "Delivered AI platform for global clients",
-    "dateRange": "2021 - Present"
+    "name": "Ernst & Young",
+    "title": "Senior Software Engineer",
+    "techStack": "Azure, .NET",
+    "summaryPoints": "Permanent Full time",
+    "dateRange": "Jan 2022 - Present"
   },
   {
     "timelineType": "work",
-    "name": "Startup XYZ",
-    "title": "Technical Program Manager",
-    "techStack": "AWS, DevOps",
-    "summaryPoints": "Built CI/CD and cost optimization tooling",
-    "dateRange": "2018 - 2021"
+    "name": "Toyota North America",
+    "title": "Software Engineer",
+    "techStack": "React, Node.js",
+    "summaryPoints": "Contract Full time",
+    "dateRange": "Jan 2021 - Dec 2021"
+  },
+  {
+    "timelineType": "work",
+    "name": "Ribbon Communications",
+    "title": "Software Engineer",
+    "techStack": "Java, Spring",
+    "summaryPoints": "Contract Full time",
+    "dateRange": "Jan 2020 - Dec 2020"
+  },
+  {
+    "timelineType": "work",
+    "name": "Wipro",
+    "title": "Senior Software Engineer",
+    "techStack": "Java, Angular",
+    "summaryPoints": "Permanent Full time",
+    "dateRange": "Jul 2015 - Sep 2019"
+  },
+  {
+    "timelineType": "education",
+    "name": "Punjab Technical University",
+    "title": "B.Tech. Computer Science",
+    "summaryPoints": "Bachelor's Degree",
+    "dateRange": "2011 - 2015"
   }
 ]

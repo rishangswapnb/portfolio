@@ -1,16 +1,17 @@
 import React from 'react';
 import './ContactMe.css';
-import profilePic from '../assets/rishang.jpeg';
+// Avatar shown on the contact card; replace `contact_avatar.png` with your photo in `src/assets`
+import profilePic from '../assets/contact_avatar.png';
 import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin } from 'react-icons/fa';
 
 const userData = {
   name: 'Rishang',
-  title: 'Technical Program Manager',
-  summary: 'Driving complex programs and delivering value through agile methods.',
-  companyUniversity: 'EY',
-  linkedinLink: 'https://www.linkedin.com/in/rishang',
-  email: 'rishang@example.com',
-  phoneNumber: '+1 555 123 4567'
+  title: 'Senior Software Engineer',
+  summary: 'Building robust full-stack applications and solving complex problems.',
+  companyUniversity: 'Ernst & Young',
+  linkedinLink: 'https://www.linkedin.com/in/rishangsharma',
+  email: 'rishangsharma@gmail.com',
+  phoneNumber: '+1 5106414862'
 };
 
 const ContactMe: React.FC = () => {

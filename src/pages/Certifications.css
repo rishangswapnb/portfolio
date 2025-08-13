@@ -1,4 +1,11 @@
-/* Certifications.css */
+/* Certifications.css (normalized card sizing) */
+
+:root {
+  --badge-size: 96px;                 /* default badge size; can be overridden from TSX */
+  --card-min-h: clamp(20px, 28vh, 32px); /* uniform card height, responsive */
+  --card-radius: 12px;
+  --card-padding: 0.3rem;
+}
 
 .certifications-container {
   display: flex;
@@ -26,62 +33,106 @@
 
 .certifications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
   width: 100%;
-  max-width: 1000px;
-  justify-items: center;
+  max-width: 1200px;
+  align-items: stretch; /* stretch items to equal row height */
+  justify-items: stretch;
 }
 
 .certification-card {
+  position: relative;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 1.5rem;
+  border-radius: var(--card-radius);
+  padding: var(--card-padding);
   box-shadow: 0 4px 12px rgba(255, 0, 0, 0.1);
   text-decoration: none;
   color: inherit;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;            /* vertical layout */
+  justify-content: space-between;    /* space out content and link */
+  align-items: center;               /* center items horizontally */
+  min-height: var(--card-min-h);     /* <-- makes every card same height */
+  width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   opacity: 0;
-  transform: translateY(50px) rotate(-2deg) scale(0.95); /* Subtle rotation and scale */
+  transform: translateY(50px) rotate(-2deg) scale(0.95);
   animation: cardFadeIn 0.6s forwards ease-in-out;
-  animation-delay: var(--delay); /* Staggered animation for grid layout */
+  animation-delay: var(--delay);
 }
 
 .certification-card:hover {
   transform: scale(1.08) rotate(0deg); /* Zoom and straight hover */
-  box-shadow: 0 10px 25px rgba(229, 9, 20, 0.4); /* Netflix red shadow */
+  box-shadow: 0 10px 25px rgba(229, 9, 20, 0.4);
 }
 
+/* Main content area fills available height so all cards align */
 .certification-content {
-  text-align: left;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  width: 100%;
+  flex: 1; /* take remaining height inside the card */
 }
 
+/* Media region: constant height so text never changes card size */
+.certification-media {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: var(--badge-size);
+  margin-bottom: 0.25rem;
+}
+
+/* Badge image normalized */
+.certification-badge {
+  width: var(--badge-size);
+  height: var(--badge-size);
+  object-fit: contain;
+}
+
+/* Fallback icon normalized */
 .certification-icon {
-  font-size: 2rem;
-  color: #4a90e2;
-  margin-bottom: 0.5rem;
+  width: var(--badge-size);
+  height: var(--badge-size);
+  display: grid;
+  place-items: center;
+  font-size: calc(var(--badge-size) * 0.9);
 }
 
-.certification-link {
-  font-size: 1.5rem;
-  color: #e50914; /* Netflix red */
-  transition: transform 0.2s ease;
+/* Text */
+.certification-content h3 {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 4px 0 0;
+  max-width: 95%;
 }
 
-.certification-card:hover .certification-link {
-  transform: scale(1.2);
+.certification-content p {
+  margin: 0;
+  opacity: 0.85;
+  font-size: 0.9rem;
 }
 
 .issued-date {
   font-size: 0.85rem;
   color: #888;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+/* External link icon */
+.certification-link {
+  font-size: 1.5rem;
+  color: #e50914;
+  transition: transform 0.2s ease;
+}
+
+.certification-card:hover .certification-link {
+  transform: scale(1.2);
 }
 
 /* Background animation */
@@ -101,4 +152,15 @@
 @keyframes cardFadeIn {
   from { opacity: 0; transform: translateY(50px) rotate(-2deg) scale(0.95); }
   to { opacity: 1; transform: translateY(0) rotate(0deg) scale(1); }
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .certifications-grid {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  :root {
+    --card-min-h: clamp(220px, 34vh, 300px);
+  }
 }
