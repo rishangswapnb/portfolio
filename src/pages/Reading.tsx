@@ -3,48 +3,90 @@
 import React from 'react';
 import './Reading.css';
 import atomicHabits from '../assets/atomic_habits.jpg';
-import richDadPoorDad from '../assets/rich_dad_poor_dad.jpg';
-import alchemist from '../assets/alchemist.jpg';
-import eatThatFrog from '../assets/eat_that_frog.jpg';
-import vijayanikiAidhuMetlu from '../assets/vijayaniki_aidu_metlu.jpg';
-import venneloAdapilla from '../assets/vennelo_adapilla.jpeg';
+import codingForDummies from '../assets/coding_for_dummies.jpg';
+import howToWinFriends from '../assets/how_to_win_friends.jpg';
+import pmpExamPrep from '../assets/pmp_exam_prep.jpg';
+import pmpExamPrep2 from '../assets/pmp_exam_prep2.jpg';
+import pmpExamPrep3 from '../assets/pmp_exam_prep3.jpg';
+import peopleSkills from '../assets/people_skills.jpg';
+import agilePracticeGuide from '../assets/agile_practice_guide.jpg';
+import deepWork from '../assets/deep_work.jpg';
+import cleanCode from '../assets/clean_code.jpg';
+import thePhoenixProject from '../assets/phoenix_project.jpg';
+import designPatterns from '../assets/design_patterns.jpg';
 
 const books = [
   {
     title: "Atomic Habits",
     author: "James Clear",
     imgSrc: atomicHabits,
-    description: "A practical guide to building good habits and breaking bad ones.",
+    description: "Practical guide to building good habits and breaking bad ones with proven strategies for continuous improvement.",
   },
   {
-    title: "Rich Dad Poor Dad",
-    author: "Robert Kiyosaki",
-    imgSrc: richDadPoorDad,
-    description: "An eye-opener on wealth, assets, and financial literacy.",
+    title: "Coding For Dummies",
+    author: "Nikhil Abraham",
+    imgSrc: codingForDummies,
+    description: "Foundation of web development languages (HTML, CSS, JavaScript) with hands-on exercises and practice tutorials.",
   },
   {
-    title: "The Alchemist",
-    author: "Paulo Coelho",
-    imgSrc: alchemist,
-    description: "A magical journey of following one's dreams.",
+    title: "How to Win Friends and Influence People",
+    author: "Dale Carnegie",
+    imgSrc: howToWinFriends,
+    description: "Timeless classic on building relationships, improving communication, and becoming more influential.",
   },
   {
-    title: "Eat That Frog",
-    author: "Brian Tracy",
-    imgSrc: eatThatFrog,
-    description: "A motivational book on overcoming procrastination.",
+    title: "Get On Track",
+    author: "Paula Deili",
+    imgSrc: pmpExamPrep,
+    description: "Comprehensive guide strategies for establishing, operating, and improving a Program Management Office (PMO) to enhance organizational efficiency and success.",
+  },
+    {
+    title: "Risk UpFront",
+    author: "Martin",
+    imgSrc: pmpExamPrep2,
+    description: "This book focuses on the fundamentals of Managing Projects in a Complex World",
+  },
+    {
+    title: "So Good They Cant Ignore You",
+    author: "Cal Newport",
+    imgSrc: pmpExamPrep3,
+    description: "The book is about becoming so good at whatever you're already doing that you build up career capital: reputation and respect for having rare and valuable skills.",
   },
   {
-    title: "Vijayaniki Aidhu Metlu",
-    author: "Yandamoori Veerendranath",
-    imgSrc: vijayanikiAidhuMetlu,
-    description: "An inspirational Telugu book for personal growth.",
+    title: "People Skills",
+    author: "Robert Bolton",
+    imgSrc: peopleSkills,
+    description: "Handbook on communication barriers, active listening, assertion techniques, and conflict resolution.",
   },
   {
-    title: "Vennelo Adapilla",
-    author: "Yandamoori Veerendranath",
-    imgSrc: venneloAdapilla,
-    description: "A classic Telugu romantic novel that touches the heart.",
+    title: "Agile Practice Guide",
+    author: "PMI & Agile Alliance",
+    imgSrc: agilePracticeGuide,
+    description: "Resource for understanding agile and hybrid approaches with practical tools for practitioners.",
+  },
+  {
+    title: "Deep Work",
+    author: "Cal Newport",
+    imgSrc: deepWork,
+    description: "Rules for focused success in a distracted world, emphasizing productivity and meaningful work.",
+  },
+  {
+    title: "Clean Code",
+    author: "Robert C. Martin",
+    imgSrc: cleanCode,
+    description: "Handbook of agile software craftsmanship with practical tips for writing readable, maintainable code.",
+  },
+  {
+    title: "The Phoenix Project",
+    author: "Gene Kim et al.",
+    imgSrc: thePhoenixProject,
+    description: "Novel about IT, DevOps, and helping businesses win, illustrating digital transformation principles.",
+  },
+  {
+    title: "Design Patterns",
+    author: "Erich Gamma et al.",
+    imgSrc: designPatterns,
+    description: "Catalog of reusable solutions to common problems in software design, promoting best practices.",
   },
 ];
 

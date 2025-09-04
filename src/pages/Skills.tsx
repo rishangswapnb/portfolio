@@ -2,11 +2,40 @@ import React from 'react';
 import './Skills.css';
 import skillsData from '../data/skills.json';
 
-import { FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaJava } from 'react-icons/fa';
-import { SiRubyonrails, SiTypescript, SiPostgresql, SiMysql, SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiHeroku, SiHtml5, SiCss3, SiRabbitmq, SiImessage } from 'react-icons/si';
+import { 
+  FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaJava, 
+  FaTools, FaCloud, FaShieldAlt, FaCode, FaSync, FaLock,
+  FaTerminal, FaRobot, FaPuzzlePiece, FaDatabase, FaChartLine,
+  FaServer, FaUsers, FaDesktop
+} from 'react-icons/fa';
+import { 
+  SiRubyonrails, SiTypescript, SiPostgresql, SiMysql, 
+  SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, 
+  SiNetlify, SiHeroku, SiRabbitmq, 
+  SiImessage 
+} from 'react-icons/si';
 import { Skill } from '../types';
 
 const iconMap: { [key: string]: JSX.Element } = {
+  // Font Awesome Icons
+  FaTools: <FaTools />,
+  FaCloud: <FaCloud />,
+  FaShieldAlt: <FaShieldAlt />,
+  FaDocker: <FaDocker />,
+  FaCode: <FaCode />,
+  FaSync: <FaSync />,
+  FaLock: <FaLock />,
+  FaTerminal: <FaTerminal />,
+  FaRobot: <FaRobot />,
+  FaPuzzlePiece: <FaPuzzlePiece />,
+  FaDatabase: <FaDatabase />,
+  FaGitAlt: <FaGitAlt />,
+  FaChartLine: <FaChartLine />,
+  FaServer: <FaServer />,
+  FaUsers: <FaUsers />,
+  FaDesktop: <FaDesktop />,
+  
+  // Simple Icons
   SiRubyonrails: <SiRubyonrails />,
   FaNodeJs: <FaNodeJs />,
   SiSpringboot: <SiSpringboot />,
@@ -15,7 +44,6 @@ const iconMap: { [key: string]: JSX.Element } = {
   FaReact: <FaReact />,
   SiTypescript: <SiTypescript />,
   FaAws: <FaAws />,
-  FaDocker: <FaDocker />,
   SiPostgresql: <SiPostgresql />,
   SiMysql: <SiMysql />,
   SiKubernetes: <SiKubernetes />,
@@ -26,7 +54,6 @@ const iconMap: { [key: string]: JSX.Element } = {
   SiImessage: <SiImessage />,
 };
 
-
 const Skills: React.FC = () => {
   const data: Skill[] = skillsData as Skill[];
 
@@ -36,7 +63,6 @@ const Skills: React.FC = () => {
     return acc;
   }, {});
 
-
   return (
     <div className="skills-container">
       {Object.keys(skillsByCategory).map((category, index) => (
@@ -45,7 +71,7 @@ const Skills: React.FC = () => {
           <div className="skills-grid">
             {skillsByCategory[category].map((skill: any, idx: number) => (
               <div key={idx} className="skill-card">
-                <div className="icon">{iconMap[skill.icon] || <FaReact />}</div>
+                <div className="icon">{iconMap[skill.icon] || <FaTools />}</div>
                 <h3 className="skill-name">
                   {skill.name.split('').map((letter: any, i: number) => (
                     <span key={i} className="letter" style={{ animationDelay: `${i * 0.05}s` }}>
