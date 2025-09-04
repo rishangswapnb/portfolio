@@ -2,35 +2,43 @@
   {
     "timelineType": "work",
     "name": "Ernst & Young",
-    "title": "Senior Software Engineer",
-    "techStack": "Azure, .NET",
-    "summaryPoints": "Permanent Full time",
+    "title": "Senior DevOps/Cloud Engineer",
+    "techStack": "Kubernetes (GKE, EKS, AKS), Terraform, Helm, Python, Grafana, Prometheus, ArgoCD, GitHub Actions, OPA, Vault, Azure ML",
+    "summaryPoints": "Contract",
     "dateRange": "Jan 2022 - Present"
   },
   {
     "timelineType": "work",
     "name": "Toyota North America",
-    "title": "Software Engineer",
-    "techStack": "React, Node.js",
-    "summaryPoints": "Contract Full time",
+    "title": "Cloud DevOps Engineer",
+    "techStack": "AWS (EKS, S3, EC2), Kafka, Java, Python, Prometheus, Grafana, ELK, Terraform, Jenkins, IoT Data",
+    "summaryPoints": "Contract",
     "dateRange": "Jan 2021 - Dec 2021"
   },
   {
     "timelineType": "work",
     "name": "Ribbon Communications",
-    "title": "Software Engineer",
-    "techStack": "Java, Spring",
-    "summaryPoints": "Contract Full time",
+    "title": "DevOps Engineer",
+    "techStack": "Azure, Kubernetes, Docker, Helm, Terraform, Python, Azure DevOps, ARM Templates",
+    "summaryPoints": "Contract ",
     "dateRange": "Jan 2020 - Dec 2020"
+  },
+      {
+    "timelineType": "education",
+    "name": "University Of Ottawa",
+    "title": "Digital Transformation and Innovation",
+    "summaryPoints": "Master's Comp Science",
+    "dateRange": "2019 - 2021"
   },
   {
     "timelineType": "work",
     "name": "Wipro",
-    "title": "Senior Software Engineer",
-    "techStack": "Java, Angular",
-    "summaryPoints": "Permanent Full time",
+    "title": "DevOps & Platform Engineer",
+    "techStack": "AWS, GCP (GKE), Terraform, Jenkins, Ansible, Python, VMware, Kubernetes",
+    "summaryPoints": "Permanent",
     "dateRange": "Jul 2015 - Sep 2019"
   },
+
   {
     "timelineType": "education",
     "name": "Punjab Technical University",
